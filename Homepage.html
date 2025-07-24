@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home | TechVerse</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+  <div class="hero-section">
+    <nav class="navbar">
+      <div class="logo">TechVerse</div>
+      <ul>
+        <li><a href="home.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content">
+      <h1>This is the Real Home Page</h1>
+      <p>Welcome to TechVerse — Explore creativity, coding, and innovation!</p>
+      <a href="projects.html" class="btn">See Projects</a>
+    </div>
+  </div>
+
+  <script>
+    gsap.from(".navbar", {
+      y: -100,
+      duration: 1.2,
+      ease: "bounce.out"
+    });
+
+    gsap.from(".hero-content h1", {
+      opacity: 0,
+      y: 50,
+      duration: 1,
+      delay: 0.5
+    });
+
+    gsap.from(".hero-content p", {
+      opacity: 0,
+      y: 50,
+      duration: 1,
+      delay: 1
+    });
+
+    gsap.from(".btn", {
+      opacity: 0,
+      scale: 0.5,
+      duration: 1,
+      delay: 1.5,
+      ease: "elastic.out(1, 0.3)"
+    });
+  </script>
+</body>
+</html>

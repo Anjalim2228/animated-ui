@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About | TechVerse</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">TechVerse</div>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="about-section">
+    <h1>About Us</h1>
+    <p>Welcome to TechVerse – your gateway to modern web development and innovative design. We're a passionate team of developers and creators who believe in the power of technology to solve real-world problems.</p>
+    <p>We specialize in building responsive, user-friendly web applications using modern tools like HTML, CSS, JavaScript, PHP, MySQL, and animation libraries like GSAP.</p>
+    <p>Join us on our journey to create impactful digital experiences!</p>
+  </section>
+
+  <script>
+    gsap.from(".navbar", { y: -100, duration: 1, ease: "power3.out" });
+    gsap.from("h1", { opacity: 0, y: 30, duration: 1, delay: 0.5 });
+    gsap.from("p", { opacity: 0, y: 20, duration: 1, delay: 0.7, stagger: 0.2 });
+  </script>
+</body>
+</html>
